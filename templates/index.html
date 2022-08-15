@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTIES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="/static/fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">        <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="/static/slick/slick.min.css">          <!-- https://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" href="/static/slick/slick-theme.css">
+    <link rel="stylesheet" href="/static/css/templatemo-upright.css">
+<!--
+    
+TemplateMo 555 Upright
+
+https://templatemo.com/tm-555-upright
+
+-->
+</head>
+<body>    
+    <div class="container-fluid">
+        <div class="row">
+
+            
+            <h2 class="tm-text-primary">20 СТРАН 🌏</h2>
+                        <hr class="mb-5">
+                        
+                        <div class="row tm-row-about">
+                            <div class="tm-col-about tm-col-about-l">
+                                <p class="mb-4">
+                            <a rel="sponsored" href="/create/">Нажми сюда что бы создать базу данный с 20 странами</a></p>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="tm-carousel">
+                                {% for post in Info %}
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <!-- <img src="/static/img/first.jpeg" alt="Featured Item"> -->
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h2 class="mb-3 tm-text-primary tm-about-title">{{post.name}}</h2>
+                                        <h4 class="tm-text-secondary tm-about-subtitle">{{post.OfficalName}}</h4>
+                                        <h4 class="tm-text-secondary tm-about-subtitle">{{post.region}}</h4>
+                                        <h4 class="tm-text-secondary tm-about-subtitle">{{post.subregion}}</h4>
+                                        <h4 class="tm-text-secondary tm-about-subtitle">{{post.population}}</h4>
+                                        <h4 class="tm-text-secondary tm-about-subtitle">{{post.continents}}</h4>
+                                        <h4 class="tm-text-secondary tm-about-subtitle">{{post.timezones}}</h4>
+                                        <h4 class="tm-text-secondary tm-about-subtitle">{{post.capital}}</h4>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                
+                                
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Contact section -->
+                            
+            </div> <!-- .tm-main -->                      
+        </div> <!-- .row -->
+    </div> <!-- .container-fluid -->
+    <script src="/static/js/jquery-3.4.1.min.js"></script>          <!-- https://jquery.com/ -->
+    <script src="/static/js/jquery.singlePageNav.min.js"></script>  <!-- https://github.com/ChrisWojcik/single-page-nav -->
+    <script src="/static/js/parallax/parallax.min.js"></script>     <!-- https://pixelcog.github.io/parallax.js/ -->
+    <script src="/static/js/imagesloaded.pkgd.min.js"></script>     <!-- https://imagesloaded.desandro.com/ -->
+    <script src="/static/js/isotope.pkgd.min.js"></script>          <!-- https://isotope.metafizzy.co/ -->
+    <script src="/static/js/jquery.magnific-popup.min.js"></script> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <script src="/static/slick/slick.min.js"></script>              <!-- https://kenwheeler.github.io/slick/ -->
+    <script src="/static/js/templatemo-script.js"></script>
+</body>
+</html>
